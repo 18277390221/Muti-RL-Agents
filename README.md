@@ -10,7 +10,7 @@ The [Unity ML-Agents](https://github.com/Unity-Technologies/ml-agents) 3v3 Socce
 
 Each soccer agent has a **partial observation** of the field. Instead of a global view, agents rely on egocentric sensor data.
 
-Agents receive a +1 reward for scoring a goal against the opponent, and a -1 reward if a goal is scored against their own team. The reward is typically shared among teammates, which aligns the teammates' incentives completely and defines a zero-sum competitive game between the two teams. The environment is thus a mix of **competitive and cooperative dynamics** where agents cooperate to achieve the common goal within each team, while two teams are adversary. 
+Agents receive a $+1$ reward for scoring a goal against the opponent, and a $-1$ reward if a goal is scored against their own team. The reward is typically shared among teammates, which aligns the teammates' incentives completely and defines a zero-sum competitive game between the two teams. The environment is thus a mix of **competitive and cooperative dynamics** where agents cooperate to achieve the common goal within each team, while two teams are adversary. 
 
 Unity 3v3 Soccer environment provides a controlled yet challenges domain for MARL research.
 
@@ -18,15 +18,14 @@ Unity 3v3 Soccer environment provides a controlled yet challenges domain for MAR
 
 [Proximal Policy Optimization (PPO)](https://arxiv.org/abs/1707.06347) is a policy-gradient reinforcement learning algorithm introduced by Schulman et al. as an efficient, stable improvements on [Trust Region Policy Optimization (TRPO)](https://arxiv.org/abs/2109.11251).
 
-Let $r_t(\theta)=\frac{\pi_{\theta}(a_t|s_t)}{\pi_{\theta_{old}}(a_t|s_t)}$. TRPO maximizes a "surrogate" objective
-$$
-L^{CPI}(\theta)=\hat{E}_t\big[r_t(\theta)\hat{A}_t\big]
-$$
+Let $r_t(\theta)=\frac{\pi_{\theta}(a_t|s_t)}{\pi_{\theta_{old}}(a_t|s_t)}$. TRPO maximizes a "surrogate" objective:
+
+$L^{CPI}(\theta)=\hat{E}_t\big[r_t(\theta)\hat{A}_t\big]$
 
 Without a constraint, maximization of $L^{CPI}$ would lead to an excessively large policy update. PPO modify the objective to penalize changes to the policy that move $r_t(\theta)$ away from 1:
-$$
-L^{CLIP}(\theta)=\hat{E}_t\bigg[\min(r_t(\theta)\hat{A}_t,\text{clip}(r_t(\theta),1-\epsilon,1+\epsilon)\hat{A}_t)\bigg]
-$$
+
+$L^{CLIP}(\theta)=\hat{E}_t\bigg[\min(r_t(\theta)\hat{A}_t,\text{clip}(r_t(\theta),1-\epsilon,1+\epsilon)\hat{A}_t)\bigg]$
+
 Intuitively, PPO's clipping acts as a soft trust region: it prevents big policy jumps could collapse performance, while it allow more flexibility than hard constraints like in TRPO.
 
 ## Multi-Agent Challenges
@@ -78,6 +77,8 @@ A potential candidate is to modify the PPO loss to include terms that come from 
 ### Population-based Training
 
 In standard self-play, we have one current policy learning against a past version or a mirror of itself. [Population-Based Training (PBT)](https://arxiv.org/abs/1711.09846) would maintain a population of diverse policies for each team, periodically selecting the most successful ones, mutating hyperparameters, and mixing strategies.
+
+A potential candidate is to enhance self-play with PBT and league dynamics.
 
 ## Group members
 
