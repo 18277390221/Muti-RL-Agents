@@ -1,0 +1,65 @@
+starting time:5.9  end time：6.5
+Member：Jin,Ziyuan  Cui,Hanjia  Li,Bowei
+######################################################################################################
+first week
+time:5.9-5.11
+######################################################################################################
+This week's progress:
+
+Jin,Ziyuan:
+1.Research on multi-agent reinforcement learning algorithms.
+2.Organize the available game AI environment.
+3.Sort out the parts that need to be completed in the project.
+
+Cui,Hanjia:
+1.Research on multi-agent reinforcement learning algorithms.
+2.Consult the thesis materials related to the project.
+3.Compile the readme file, the brief introduction of the entire project, etc.
+
+Li,Bowei:
+1.Investigate the feasibility and difficulty of some reinforcement learning algorithms.
+2.Investigate the feasibility of the research project.
+3.Look for recent related working papers.
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————
+Plans for Next week:
+
+Jin,Ziyuan:
+1.Sort out the project framework and upload the project architecture file.
+2.Initially build the code implementation process in each file in blocks.
+
+Cui,Hanjia:
+1.Deploy the Unity environment and write a demo to verify the feasibility of the selected environment.
+2.Design the interfaces that need to interact with the algorithm in the discussion environment.
+
+Li,Bowei:
+1.Write the test program of the PPO algorithm according to the discussion.
+2.Verify the feasibility of the algorithm. If it is not feasible, replace it with a new algorithm and 
+write a demo for verification.
+
+######################################################################################################
+second week
+time:5.12-
+######################################################################################################
+This week's progress:
+
+Jin,Ziyuan:
+
+
+Cui,Hanjia:
+
+
+Li,Bowei:
+
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————
+Plans for Next week:
+
+Jin,Ziyuan:
+
+
+Cui,Hanjia:
+
+
+Li,Bowei:
+
