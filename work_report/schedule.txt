@@ -44,7 +44,7 @@ time:5.12-5.18
 This week's progress:
 
 Jin,Ziyuan:
-
+1. Sort out the project framework and upload the project architecture file.
 
 Cui,Hanjia:
 1. Deploy the train environment in the server and make sure it work with basic functionality.
@@ -53,12 +53,15 @@ Cui,Hanjia:
 
 
 Li,Bowei:
+1. Figure out the code organization and related algorithm implementation.
 
 
 ——————————————————————————————————————————————————————————————————————————————————————————————————————
 Plans for Next week:
 
 Jin,Ziyuan:
+1. (Cooperate with Li,Bowei) Verify the feasibility of the algorithm. If it is not feasible, replace it with a new algorithm and 
+write a demo for verification.
 
 
 Cui,Hanjia:
@@ -68,4 +71,5 @@ Cui,Hanjia:
 
 
 Li,Bowei:
-
+1. (Cooperate with Jin,Ziyuan) Verify the feasibility of the algorithm. If it is not feasible, replace it with a new algorithm and 
+write a demo for verification.
