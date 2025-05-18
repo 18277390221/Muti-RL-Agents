@@ -39,7 +39,7 @@ write a demo for verification.
 
 ######################################################################################################
 second week
-time:5.12-
+time:5.12-5.18
 ######################################################################################################
 This week's progress:
 
@@ -47,6 +47,9 @@ Jin,Ziyuan:
 
 
 Cui,Hanjia:
+1. Deploy the train environment in the server and make sure it work with basic functionality.
+2. Identify the problem of instability and performance variance. The default trainer does not provide a sufficiently reliable baseline without further enhancement.
+3. Explore simple interventions including hyperparameter fine-tuning to see whether the baseline can be stabilized.
 
 
 Li,Bowei:
@@ -59,6 +62,9 @@ Jin,Ziyuan:
 
 
 Cui,Hanjia:
+1. Keep exploring simple interventions like hyper-parameter fine-tuning.
+2. Introduce the basic technique like reward reshaping. Augment the default sparse reward scheme with dense feedback, so agents receive positive reinforcement for each beneficial movement.
+3. Assess algorithmic enhancements. Investigate the feasibility of core modifications to improve overall performance.
 
 
 Li,Bowei:
