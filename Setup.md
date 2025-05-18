@@ -18,5 +18,5 @@ Running pip with the -e flag will let you make changes to the Python files direc
 ### Train environment
 
 ```shell
-mlagents-learn ./Configuration/3v3_Soccer.yaml --env <env-path> --num-envs <n> --run-id <run-identifier> --no-graphics --torch-device cuda
+mlagents-learn <config-file> --env <env-path> --num-envs <n> --run-id <run-identifier> --no-graphics --torch-device cuda
 ```
