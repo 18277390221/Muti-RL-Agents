@@ -74,14 +74,16 @@ Li,Bowei:
 1. (Cooperate with Jin,Ziyuan) Verify the feasibility of the algorithm. If it is not feasible, replace it with a new algorithm and 
 write a demo for verification.
 
+<<<<<<< Updated upstream
 ######################################################################################################
-second week
+third week
 time:5.19-5.25
 ######################################################################################################
 This week's progress:
 
 Jin,Ziyuan:
-1. 
+1. Complete the task of last week.
+2.Add the reward agent mechanism and complete the code testing.
 
 Cui,Hanjia:
 1. Train a model v1 with (1) hyper-parameter fine-tuning; (2) role differentiation (striker v.s. goalie); (3) add a tiny reward to encourage  ball-kicking behavior.
@@ -95,8 +97,8 @@ Li,Bowei:
 Plans for Next week:
 
 Jin,Ziyuan:
-1. 
-
+1. Complete the entire project.
+2.Test and verify the experimental results.
 
 Cui,Hanjia:
 1. Use LLM to generate reward functions. Integrate those functions into our local codebase and validate correctness.
@@ -106,4 +108,5 @@ Cui,Hanjia:
 
 Li,Bowei:
 1. 
+
 

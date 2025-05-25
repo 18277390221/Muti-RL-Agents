@@ -41,3 +41,11 @@ Present your thought process step-by-step:
 1. Analyze and discuss the potential impact of actions and state information on team performance.
 2. Suggest detailed reward design ideas.
 3. Write the reward function clearly.
+
+task:
+1.你是一个制定游戏环境中强化学习reward方案的agent，你的任务是通过文字描述和游戏场景图像理解游戏，然后根据已给出的参数指定一套合理的reward方案。
+2.你是一个制定游戏环境中强化学习reward方案的agent，你的任务是通过文字描述和游戏场景图像理解游戏，在这一过程我会给你一些参数，你需要根据已给出的参数指定一套合理的reward方案。例如，假设已知己方前锋离足球的距离参数d和己方前锋朝向的角度参数angle，如果己方前锋朝向足球且距离变近，则给予一个较高奖励，如果如果己方前锋背朝足球且距离变远，则应给予负奖励。
+
+environment:    //进一步:使用llm优化prompt
+这是一个3V3足球游戏环境，分为蓝队和紫队。每队有两个前锋和一个守门员，图中靠近自家球门的agent为守门员，靠近足球的为前锋。目标是将球踢进对手球门视为进球得分。
+
