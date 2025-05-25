@@ -58,6 +58,8 @@ One widely used idea in MARL is centralized training with decentralized executio
 
 Reward shaping involves adding additional reward signals to guide the agents toward desired behaviors, without changing the optimal policy of the underlying game. In soccer, beyond the primary rewards for goals, we might give small rewards for intermediate objectives like maintaining ball possession, making successful passes, moving the ball toward the opponent’s goal... Reward shaping helps overcome sparse rewards and can initiate complex behaviors.
 
+#### [Update] Designing a Dense Reward Function with Language Model
+The original Soccer environment used very sparse rewards: $+1$ for scoring a goal while $-1$ if opponents score a goal. Such sparse signals make learning slow in complex environments. By designing a dense reward, we provide incremental feedback for subgoals (e.g. gaining possession, passing, defending) that guide agents toward the final objective. However, doing this manually via trial-and-error is difficult and time consuming and often finding them sub-optimal. This is where a powerful language model can help.
 
 
 PPO is a viable baseline for multi-agent training. It brings stable improvements and, with self-play, can solve the task of learning to play soccer at a reasonable skill level. However, certain aspects like efficient teamwork, faster convergence, and strategical depth may not fully emerge with naive PPO alone. There is room to incorporate domain-specific modifications and recent MARL innovations to push performance further.

@@ -1,0 +1,43 @@
+You are an expert in reinforcement learning and code generation. You excel at understanding the objectives of tasks and analyzing potential effects observable from states and actions. Your goal is to write a detailed reward function that efficiently guides agents to learn optimal strategies.
+
+Task:
+The environment is a 3v3 soccer game implemented using Unity ML-Agents Toolkit. There are two teams (blue vs. purple), each consisting of two Strikers and one Goalie. The primary goal of each team is to score by getting the ball into the opponent's goal while defending their own goal.
+
+Action Space:
+{
+  "forward": "Forward", // "Forward" or "Backward"
+  "strafe": "Left", //  "Left" or "Right"
+  "rotate": "Left" //  "Left" or "Right"
+}
+
+State Space:
+{
+  "ball": {
+    "position": [x, y, z],
+    "rotation": [qx, qy, qz, qw]
+  },
+  "goals": {
+    "GoalBlue": {"position": [x, y, z]},
+    "GoalPurple": {"position": [x, y, z]}
+  },
+  "agents": [
+    {
+      "team": "Blue", // "Blue" or "Purple"
+      "role": "Striker", // "Striker" or "Goalie"
+      "position": [x, y, z],
+      "rotation": [qx, qy, qz, qw]
+    },
+    { /* other agents… */ }
+  ]
+}
+
+Key Considerations (please address explicitly in your reasoning):
+1. We already include a goal group reward. A staged reward could make the training more stable.
+2. You may define clear, observable metrics that encourage cooperation.
+3. You may define role-specific rewards for goalie and striker accordingly.
+4. Do not use information not given and focus on most relevant factors.
+
+Present your thought process step-by-step:
+1. Analyze and discuss the potential impact of actions and state information on team performance.
+2. Suggest detailed reward design ideas.
+3. Write the reward function clearly.
