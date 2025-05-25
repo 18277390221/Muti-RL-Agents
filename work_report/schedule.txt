@@ -90,7 +90,7 @@ Cui,Hanjia:
 2. Draft and refine prompts to generate reward function.
 
 Li,Bowei:
-1. 
+1. Research on integrating human feedback mechanisms to improve algorithms.
 
 
 ——————————————————————————————————————————————————————————————————————————————————————————————————————
@@ -107,6 +107,6 @@ Cui,Hanjia:
 
 
 Li,Bowei:
-1. 
+1. Integrate human feedback to improve algorithms.
 
 
