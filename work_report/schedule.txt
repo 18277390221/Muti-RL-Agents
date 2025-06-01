@@ -126,7 +126,7 @@ Cui,Hanjia:
 
 
 Li,Bowei:
-
+1. Organize the work at hand.
 
 
 ——————————————————————————————————————————————————————————————————————————————————————————————————————
@@ -142,4 +142,4 @@ Cui,Hanjia:
 
 
 Li,Bowei:
-
+1. Prepare the poster and report.
