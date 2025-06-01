@@ -108,52 +108,56 @@ To mitigate these shortcomings, we solicited targeted human feedback and folded 
 
 The refined reward function is:
 ```c#
-public float ComputeReward(string team, string role, Vector3 agentPos, Vector3 ballPos, Vector3 ownGoalPos, Vector3 oppGoalPos, Vector3 previousBallPos, bool goalScored, bool ownGoalScored, bool kickedBall)
+public void ApplyAgentReward(string role, Vector3 agentPos, Vector3 ballPos, Vector3 previousBallPos,
+                             Vector3 ownGoalPos, Vector3 oppGoalPos, bool kickedBall)
 {
     float reward = 0.0f;
 
-    // Global rewards for goals
-    if (goalScored)
-        reward += 1.0f; // positive reward for scoring
-    if (ownGoalScored)
-        reward -= 1.0f; // negative reward for conceding
+    // Small penalty to encourage quick scoring and discourage stalling
+    reward -= 0.001f;
 
-    // Reward for approaching the ball
-    float distToBall = Vector3.Distance(agentPos, ballPos);
-    float prevDistToBall = Vector3.Distance(agentPos, previousBallPos);
-    if (distToBall < prevDistToBall)
-        reward += 0.01f; // small incentive to approach ball
-
-    // Reward for actively interacting with the ball
     if (kickedBall)
-        reward += 0.1f;
-
-    if (role == "Striker")
     {
-        // Reward based on ball moving closer to opponent goal after kick
-        float prevGoalDist = Vector3.Distance(previousBallPos, oppGoalPos);
-        float currGoalDist = Vector3.Distance(ballPos, oppGoalPos);
-        if (currGoalDist < prevGoalDist)
-            reward += 0.05f; // incentivize moving ball toward goal
-    }
-    else if (role == "Goalie")
-    {
-        // Reward goalie positioning between ball and own goal
-        Vector3 ballToGoal = (ownGoalPos - ballPos).normalized;
-        Vector3 ballToAgent = (agentPos - ballPos).normalized;
-        float positioningAlignment = Vector3.Dot(ballToGoal, ballToAgent);
-        
-        if (positioningAlignment > 0.8f) // Goalie is effectively positioned
-            reward += 0.05f;
+        // Reward meaningful ball interactions (actual kicks)
+        reward += 0.02f;
 
-        // Reward goalie if they successfully clear the ball away from their goal
-        float prevOwnGoalDist = Vector3.Distance(previousBallPos, ownGoalPos);
-        float currOwnGoalDist = Vector3.Distance(ballPos, ownGoalPos);
-        if (currOwnGoalDist > prevOwnGoalDist && kickedBall)
-            reward += 0.1f; // goalie actively defending
+        if (role == "Striker")
+        {
+            // Reward striker if kick moves ball noticeably closer to opponent's goal
+            float prevGoalDist = Vector3.Distance(previousBallPos, oppGoalPos);
+            float currGoalDist = Vector3.Distance(ballPos, oppGoalPos);
+            
+            if (currGoalDist < prevGoalDist - 0.5f) // significant forward progress only
+                reward += 0.05f;
+        }
+        else if (role == "Goalie")
+        {
+            // Reward goalie clearing the ball from own goal area
+            float prevOwnGoalDist = Vector3.Distance(previousBallPos, ownGoalPos);
+            float currOwnGoalDist = Vector3.Distance(ballPos, ownGoalPos);
+
+            if (currOwnGoalDist > prevOwnGoalDist + 0.5f) // significant clearance
+                reward += 0.05f;
+        }
     }
 
-    return reward;
+    if (role == "Goalie")
+    {
+        // Positioning reward activated only when ball is close to goal
+        float ballToGoalDist = Vector3.Distance(ballPos, ownGoalPos);
+        if (ballToGoalDist < 10.0f) // relevant defensive zone threshold
+        {
+            Vector3 ballToGoal = (ownGoalPos - ballPos).normalized;
+            Vector3 ballToAgent = (agentPos - ballPos).normalized;
+            float positioningAlignment = Vector3.Dot(ballToGoal, ballToAgent);
+
+            if (positioningAlignment > 0.8f) // effectively positioned
+                reward += 0.02f;
+        }
+    }
+
+    AddReward(reward);
 }
+
 
 ```
