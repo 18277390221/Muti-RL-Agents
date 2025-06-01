@@ -97,15 +97,16 @@ public class SoccerEnvController : MonoBehaviour
 
     public void GoalTouched(Team scoredTeam)
     {
-        if (scoredTeam == Team.Blue)
+        foreach (var item in AgentsList)
         {
-            m_BlueAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
-            m_PurpleAgentGroup.AddGroupReward(-1);
-        }
-        else
-        {
-            m_PurpleAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
-            m_BlueAgentGroup.AddGroupReward(-1);
+            if (item.Agent.team == scoredTeam)
+            {
+                item.Agent.AddReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
+            }
+            else
+            {
+                item.Agent.AddReward(-1);
+            }
         }
         m_PurpleAgentGroup.EndGroupEpisode();
         m_BlueAgentGroup.EndGroupEpisode();

@@ -39,6 +39,14 @@ public class SoccerAgent : Agent
     float m_LateralSpeed;
     float m_ForwardSpeed;
 
+    public GameObject ball;
+    public GameObject goal;
+    public GameObject opponentGoal;
+
+    float m_distToGoal;
+    float m_distBallToGoal;
+    bool m_kickedBall;
+
 
     [HideInInspector]
     public Rigidbody agentRb;
@@ -93,6 +101,17 @@ public class SoccerAgent : Agent
         agentRb = GetComponent<Rigidbody>();
         agentRb.maxAngularVelocity = 500;
 
+        m_distToGoal = Vector3.Distance(transform.position, goal.transform.position);
+        if (position == Position.Striker)
+        {
+            m_distBallToGoal = Vector3.Distance(ball.transform.position, opponentGoal.transform.position);
+        }
+        else if (position == Position.Goalie)
+        {
+            m_distBallToGoal = Vector3.Distance(ball.transform.position, goal.transform.position);
+        }
+        m_kickedBall = false;
+
         m_ResetParams = Academy.Instance.EnvironmentParameters;
     }
 
@@ -145,24 +164,47 @@ public class SoccerAgent : Agent
 
     public override void OnActionReceived(ActionBuffers actionBuffers)
     {
-        if (position == Position.Goalie)
-        {
-            // Existential bonus for Goalies.
-            AddReward(m_Existential);
-        }
-        else if (position == Position.Striker)
-        {
-            // Existential penalty for Strikers
-            AddReward(-m_Existential);
-        }
+        AddReward(-m_Existential);
         MoveAgent(actionBuffers.DiscreteActions);
         GiveReward();
-
+        m_kickedBall = false; // reset
     }
 
     public void GiveReward()
     {
-        // TODO
+        float reward = 0.0f;
+
+        if (position == Position.Striker)
+        {
+            // Reward based on ball moving closer to opponent goal after kick
+            float distBallToGoal = Vector3.Distance(ball.transform.position, opponentGoal.transform.position);
+            if (distBallToGoal < m_distBallToGoal && m_kickedBall)
+            {
+                reward += 0.005f;
+            }
+            m_distBallToGoal = distBallToGoal;
+        }
+        else if (position == Position.Goalie)
+        {
+            // Reward goalie positioning between ball and own goal
+            Vector3 ballToGoal = (goal.transform.position - ball.transform.position).normalized;
+            Vector3 ballToAgent = (transform.position - ball.transform.position).normalized;
+            float positioningAlignment = Vector3.Dot(ballToGoal, ballToAgent);
+
+            float distBallToGoal = Vector3.Distance(ball.transform.position, goal.transform.position);
+
+            if (positioningAlignment > 0.8f && distBallToGoal < m_distToGoal * 1.2)
+            {
+                reward += 0.002f;
+            }
+
+            if (distBallToGoal > m_distBallToGoal && m_kickedBall)
+            {
+                reward += 0.005f;
+            }
+        }
+
+        AddReward(reward);
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
@@ -208,7 +250,10 @@ public class SoccerAgent : Agent
         }
         if (c.gameObject.CompareTag("ball"))
         {
-            AddReward(.2f * m_BallTouch);
+            m_kickedBall = true;
+            // Reward for actively interacting with the ball
+            AddReward(0.002f);
+
             var dir = c.contacts[0].point - transform.position;
             dir = dir.normalized;
             c.gameObject.GetComponent<Rigidbody>().AddForce(dir * force);

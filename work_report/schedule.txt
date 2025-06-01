@@ -74,7 +74,6 @@ Li,Bowei:
 1. (Cooperate with Jin,Ziyuan) Verify the feasibility of the algorithm. If it is not feasible, replace it with a new algorithm and 
 write a demo for verification.
 
-<<<<<<< Updated upstream
 ######################################################################################################
 third week
 time:5.19-5.25
@@ -109,4 +108,36 @@ Cui,Hanjia:
 Li,Bowei:
 1. Integrate human feedback to improve algorithms.
 
+
+######################################################################################################
+fourth week
+time:5.26-6.1
+######################################################################################################
+This week's progress:
+
+Jin,Ziyuan:
+
+
+Cui,Hanjia:
+1. Use LLM to generate reward functions. Integrate those functions into our local codebase and validate correctness.
+2. Retrain agents with the newly integrated reward functions.
+3. Analyze training outcomes to pinpoint strengths and weaknesses in the reward design. Provide targeted feedback to the LLM and update prompts accordingly. Refine subsequent reward-generation prompts and repeat the integration cycle.
+
+
+Li,Bowei:
+
+
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————
+Plans for Next week:
+
+Jin,Ziyuan:
+
+
+Cui,Hanjia:
+1. Summarize the current results, and re-evaluate previously unworked ideas.
+2. Prepare the poster and report.
+
+
+Li,Bowei:
 

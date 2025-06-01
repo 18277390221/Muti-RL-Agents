@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44971502, g: 0.49977982, b: 0.57563883, a: 1}
+  m_IndirectSpecularColor: {r: 0.44971436, g: 0.49977893, b: 0.57563764, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -337,6 +337,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb38cc06e86b64c49a052703266e223e, type: 3}
+--- !u!114 &584670038 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4777354902356708883, guid: cb38cc06e86b64c49a052703266e223e, type: 3}
+  m_PrefabInstance: {fileID: 7550016533159618340}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e397bc3ae78c466a8d44400f5b68e38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &728073272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1158,18 +1169,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2697770847452310760, guid: cb38cc06e86b64c49a052703266e223e, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: a3d28c4f02407910b8cf16508437b1a7, type: 3}
+    - target: {fileID: 2968067379248270182, guid: cb38cc06e86b64c49a052703266e223e, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: 80fc2f5d776235596a45497e20bbde11, type: 3}
     - target: {fileID: 3429834986457695081, guid: cb38cc06e86b64c49a052703266e223e, type: 3}
       propertyPath: m_Name
       value: 3v3_Soccer_Ray_Area
       objectReference: {fileID: 0}
     - target: {fileID: 3655913662482029069, guid: cb38cc06e86b64c49a052703266e223e, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: 8bcb4225518484e5e961c3b10db85776, type: 3}
+    - target: {fileID: 3655913662482029069, guid: cb38cc06e86b64c49a052703266e223e, type: 3}
       propertyPath: m_BehaviorName
       value: 3v3_Soccer_Striker
       objectReference: {fileID: 0}
     - target: {fileID: 3669459360867058190, guid: cb38cc06e86b64c49a052703266e223e, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: cc02f0fc90b800676a4af8c7c091fadd, type: 3}
+    - target: {fileID: 3669459360867058190, guid: cb38cc06e86b64c49a052703266e223e, type: 3}
       propertyPath: m_BehaviorName
       value: 3v3_Soccer_Striker
       objectReference: {fileID: 0}
+    - target: {fileID: 5117355828120300326, guid: cb38cc06e86b64c49a052703266e223e, type: 3}
+      propertyPath: envController
+      value: 
+      objectReference: {fileID: 584670038}
     - target: {fileID: 6265475633924938265, guid: cb38cc06e86b64c49a052703266e223e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1211,9 +1242,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6987952633201565339, guid: cb38cc06e86b64c49a052703266e223e, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: 8bcb4225518484e5e961c3b10db85776, type: 3}
+    - target: {fileID: 6987952633201565339, guid: cb38cc06e86b64c49a052703266e223e, type: 3}
       propertyPath: m_BehaviorName
       value: 3v3_Soccer_Striker
       objectReference: {fileID: 0}
+    - target: {fileID: 8488153371061609695, guid: cb38cc06e86b64c49a052703266e223e, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: cc02f0fc90b800676a4af8c7c091fadd, type: 3}
     - target: {fileID: 8488153371061609695, guid: cb38cc06e86b64c49a052703266e223e, type: 3}
       propertyPath: m_BehaviorName
       value: 3v3_Soccer_Striker
