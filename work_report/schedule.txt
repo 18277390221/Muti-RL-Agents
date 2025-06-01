@@ -116,7 +116,8 @@ time:5.26-6.1
 This week's progress:
 
 Jin,Ziyuan:
-
+1.Switch the model and test using Claude and o3 API.
+2.Collect data for local fine-tuning.
 
 Cui,Hanjia:
 1. Use LLM to generate reward functions. Integrate those functions into our local codebase and validate correctness.
@@ -132,7 +133,8 @@ Li,Bowei:
 Plans for Next week:
 
 Jin,Ziyuan:
-
+1.Add a local fine-tuning model based on human feedback.
+2.Sort out and report the project.
 
 Cui,Hanjia:
 1. Summarize the current results, and re-evaluate previously unworked ideas.
