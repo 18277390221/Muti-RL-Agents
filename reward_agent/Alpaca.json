@@ -1,0 +1,338 @@
+[
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The goalkeeper of the Purple team is trying to kick the football far away from his own goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_1.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The goalkeeper of the blue team is trying to kick the football far away from his own goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_2.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_3.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the Purple team is attempting to kick the football into his own goal, which is not worthy of encouragement. Therefore, when designing the reward function, the reward for such behavior should be reduced.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_4.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the Purple team is attempting to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased. The blue team is attempting to intercept the striker of the purple team from kicking the ball towards their own goal, which is commendable. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_5.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the Purple team is attempting to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_6.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The goalkeeper of the Purple team is trying to kick the football far away from his own goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_7.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_8.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased. The striker of the Purple team is attempting to intercept the striker of the blue team from kicking the ball towards his own goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_9.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased. The Purple team is attempting to intercept the striker of the blue team from kicking the ball towards their own goal, which is commendable. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_10.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased. The goalkeeper of the Purple team is attempting to kick the ball far into his own goal, which is commendable. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_11.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the Purple team is attempting to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_12.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the Purple team is attempting to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased. The goalkeeper of the blue team is attempting to kick the ball far into his own goal, which is commendable. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_13.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased. The striker of the Purple team is attempting to intercept the striker of the blue team from kicking the ball towards his own goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_14.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_15.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the Purple team is attempting to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased. The blue team is attempting to intercept the striker of the purple team from kicking the ball towards their own goal, which is commendable. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_16.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_17.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the Purple team is attempting to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased. The blue team is attempting to intercept the striker of the purple team from kicking the ball towards their own goal, which is commendable. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_18.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_19.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_20.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased. The striker of the Purple team is attempting to intercept the striker of the blue team from kicking the ball towards his own goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_21.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_22.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased. The goalkeeper of the Purple team is attempting to intercept the striker of the blue team kicking the ball towards his own goal, which is commendable. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_23.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the Purple team is attempting to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased. The blue team is attempting to intercept the striker of the purple team from kicking the ball towards their own goal, which is commendable. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_24.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased. The goalkeeper of the Purple team is attempting to kick the ball far into his own goal, which is commendable. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_25.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased. The goalkeeper of the Purple team is attempting to intercept the striker of the blue team kicking the ball towards his own goal, which is commendable. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_26.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased. The goalkeeper of the Purple team is attempting to kick the ball far into his own goal, which is commendable. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_27.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_28.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the Purple team is attempting to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased. The striker of the blue team is attempting to intercept the striker of the purple team from kicking the ball towards his own goal, which is commendable. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_29.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased. The striker of the Purple team is attempting to intercept the striker of the blue team from kicking the ball towards his own goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_30.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The goalkeeper of the blue team is trying to kick the football far away from his own goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_31.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased. The striker of the Purple team is attempting to intercept the striker of the blue team from kicking the ball towards his own goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_32.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased. The goalkeeper of the Purple team is attempting to kick the ball far into his own goal, which is commendable. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_33.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased. The striker of the Purple team is attempting to intercept the striker of the blue team from kicking the ball towards his own goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_34.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased. The striker of the Purple team is attempting to intercept the striker of the blue team from kicking the ball towards his own goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_35.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The goalkeeper of the Purple team is trying to kick the football far away from his own goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_36.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased. The goalkeeper of the Purple team is attempting to kick the ball far into his own goal, which is commendable. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_37.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased. The goalkeeper of the Purple team is attempting to kick the ball far into his own goal, which is commendable. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_38.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The goalkeeper of the Purple team is trying to kick the football far away from his own goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_39.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased. The striker of the Purple team is attempting to intercept the striker of the blue team from kicking the ball towards his own goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_40.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_41.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased. The striker of the Purple team is attempting to intercept the striker of the blue team from kicking the ball towards his own goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_42.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The goalkeeper of the blue team is trying to kick the football far away from his own goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_43.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_44.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_45.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The goalkeeper of the Purple team is attempting to kick the football into his own goal, which is not worthy of encouragement. Therefore, when designing the reward function, the reward for such behavior should be reduced.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_46.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The goalkeeper of the Purple team is trying to kick the football far away from his own goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_47.png"
+        ]
+    },
+    {
+        "instruction": "You are an agent who formulates the reinforcement learning reward scheme in the game environment. Your task is to understand the game through textual descriptions and game scene images, and then formulate a reasonable reward scheme based on the given parameters. Now, please present your thoughts on the current game scene in the picture before formulating the reward scheme.",
+        "output": "The striker of the blue team is trying to kick the football into the opponent's goal, which is worthy of encouragement. Therefore, when designing the reward function, the reward for this behavior should be increased.",
+        "images": [
+          "/home/sda/ZY/Muti-RL-Agents/reward_agent/human_data/screenshot_48.png"
+        ]
+    }
+]
