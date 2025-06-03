@@ -10,7 +10,7 @@ from init_code import code
 
 if __name__ == "__main__":
 
-    image_path = "/home/sda/ZY/Muti-RL-Agents/reward_agent/init_image/image.png" #游戏环境的初始图，这里分为两种，一种是俯视图，一种是第三人称立体图，最终测试哪种效果最好。
+    image_path = "/home/sda/ZY/Muti-RL-Agents/reward_agent/init_image/init.png" #游戏环境的初始图，这里分为两种，一种是俯视图，一种是第三人称立体图，最终测试哪种效果最好。
 
     with open('prompt.json', 'r', encoding='utf-8') as file:
         prompts = json.load(file)
@@ -18,16 +18,52 @@ if __name__ == "__main__":
     qwen_prompt = prompts.get('qwen_prompt')
 
     task = """
-            请给出一个合适的reward奖励策略，要求输出代码到
-            public void GiveReward()
+            The environment is a 3v3 soccer game implemented using Unity ML-Agents Toolkit. There are two teams (blue vs. purple), each consisting of two Strikers and one Goalie. The primary goal of each team is to score by getting the ball into the opponent's goal while defending their own goal.
+
+            Action Space:
             {
-                // TODO
-            }。
+            "forward": "Forward", // "Forward" or "Backward"
+            "strafe": "Left", //  "Left" or "Right"
+            "rotate": "Left" //  "Left" or "Right"
+            }
+
+            State Space:
+            {
+            "ball": {
+                "position": [x, y, z],
+                "rotation": [qx, qy, qz, qw]
+            },
+            "goals": {
+                "GoalBlue": {"position": [x, y, z]},
+                "GoalPurple": {"position": [x, y, z]}
+            },
+            "agents": [
+                {
+                "team": "Blue", // "Blue" or "Purple"
+                "role": "Striker", // "Striker" or "Goalie"
+                "position": [x, y, z],
+                "rotation": [qx, qy, qz, qw]
+                },
+                { /* other agents… */ }
+            ]
+            }
+
+            Key Considerations:
+            1. We already include a goal group reward. A staged reward could make the training more stable.
+            2. You may define clear, observable metrics that encourage cooperation.
+            3. You may define role-specific rewards for goalie and striker accordingly.
+            4. Do not use information not given and focus on most relevant factors.
+
+            Present your thought process step-by-step:
+            1. Analyze and discuss the potential impact of actions and state information on team performance.
+            2. Suggest detailed reward design ideas.
+            3. Write the reward function clearly.
+
+            The following is the source code. You need to provide the specific code of the GiveReward() function.No textual description is required. Please directly provide the code in public void GiveReward() and do not give any other irrelevant code.
         """
 
-
     model = QwenVL()
-    qwen_prompt = qwen_prompt + task
+    qwen_prompt = qwen_prompt + task + "\n" + code
     qwen_response = model.chat(qwen_prompt, image_path)
 
     history = [{"text": qwen_prompt, "response": qwen_response}]
