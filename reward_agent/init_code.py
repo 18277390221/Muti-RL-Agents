@@ -39,6 +39,14 @@ public class SoccerAgent : Agent
     float m_LateralSpeed;
     float m_ForwardSpeed;
 
+    public GameObject ball;
+    public GameObject goal;
+    public GameObject opponentGoal;
+
+    float m_distToGoal;
+    float m_distBallToGoal;
+    bool m_kickedBall;
+
 
     [HideInInspector]
     public Rigidbody agentRb;
@@ -93,6 +101,17 @@ public class SoccerAgent : Agent
         agentRb = GetComponent<Rigidbody>();
         agentRb.maxAngularVelocity = 500;
 
+        m_distToGoal = Vector3.Distance(transform.position, goal.transform.position);
+        if (position == Position.Striker)
+        {
+            m_distBallToGoal = Vector3.Distance(ball.transform.position, opponentGoal.transform.position);
+        }
+        else if (position == Position.Goalie)
+        {
+            m_distBallToGoal = Vector3.Distance(ball.transform.position, goal.transform.position);
+        }
+        m_kickedBall = false;
+
         m_ResetParams = Academy.Instance.EnvironmentParameters;
     }
 
@@ -145,57 +164,17 @@ public class SoccerAgent : Agent
 
     public override void OnActionReceived(ActionBuffers actionBuffers)
     {
-        if (position == Position.Goalie)
-        {
-            // Existential bonus for Goalies.
-            AddReward(m_Existential);
-        }
-        else if (position == Position.Striker)
-        {
-            // Existential penalty for Strikers
-            AddReward(-m_Existential);
-        }
+        AddReward(-m_Existential);
         MoveAgent(actionBuffers.DiscreteActions);
         GiveReward();
-
+        m_kickedBall = false; // reset
     }
 
     public void GiveReward()
     {
-        // TODO
+        //add your reward policy here
     }
 
-    public override void Heuristic(in ActionBuffers actionsOut)
-    {
-        var discreteActionsOut = actionsOut.DiscreteActions;
-        //forward
-        if (Input.GetKey(KeyCode.W))
-        {
-            discreteActionsOut[0] = 1;
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            discreteActionsOut[0] = 2;
-        }
-        //rotate
-        if (Input.GetKey(KeyCode.A))
-        {
-            discreteActionsOut[2] = 1;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            discreteActionsOut[2] = 2;
-        }
-        //right
-        if (Input.GetKey(KeyCode.E))
-        {
-            discreteActionsOut[1] = 1;
-        }
-        if (Input.GetKey(KeyCode.Q))
-        {
-            discreteActionsOut[1] = 2;
-        }
-    }
     /// <summary>
     /// Used to provide a "kick" to the ball.
     /// </summary>
@@ -208,7 +187,10 @@ public class SoccerAgent : Agent
         }
         if (c.gameObject.CompareTag("ball"))
         {
-            AddReward(.2f * m_BallTouch);
+            m_kickedBall = true;
+            // Reward for actively interacting with the ball
+            AddReward(0.002f);
+
             var dir = c.contacts[0].point - transform.position;
             dir = dir.normalized;
             c.gameObject.GetComponent<Rigidbody>().AddForce(dir * force);
@@ -221,4 +203,5 @@ public class SoccerAgent : Agent
     }
 
 }
+
 '''
