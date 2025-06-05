@@ -143,3 +143,34 @@ Cui,Hanjia:
 
 Li,Bowei:
 1. Prepare the poster and report.
+
+######################################################################################################
+fifth week
+time:6.2-6.5
+######################################################################################################
+This week's progress:
+
+Jin,Ziyuan:
+1. Train a local fine-tuning model.
+2. Sort out and report the project.
+
+Cui,Hanjia:
+1. Summarize the current results, and re-evaluate previously unworked ideas.
+2. Finish the poster.
+
+
+Li,Bowei:
+1. Organize the work at hand.
+
+
+——————————————————————————————————————————————————————————————————————————————————————————————————————
+Plans for 6.6-6.8:
+
+Jin,Ziyuan:
+1. Finish the final report.
+
+Cui,Hanjia:
+1. Finish the final report.
+
+Li,Bowei:
+1. Finish the final report.
