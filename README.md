@@ -64,7 +64,7 @@ The original Soccer environment used very sparse rewards: $+1$ for scoring a goa
 
 PPO is a viable baseline for multi-agent training. It brings stable improvements and, with self-play, can solve the task of learning to play soccer at a reasonable skill level. However, certain aspects like efficient teamwork, faster convergence, and strategical depth may not fully emerge with naive PPO alone. There is room to incorporate domain-specific modifications and recent MARL innovations to push performance further.
 
-## Potential extensions of PPOs for MARL
+<!-- ## Potential extensions of PPOs for MARL
 
 ### Opponent Modeling
 
@@ -86,4 +86,4 @@ A potential candidate is to enhance self-play with PBT and league dynamics.
 
 * Group Leader: Ziyuan Jin 2024233160
 
-* Group members: Hanjia Cui 2024233130, Bowei Li 2024232099
+* Group members: Hanjia Cui 2024233130, Bowei Li 2024232099 -->
